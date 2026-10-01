@@ -45,7 +45,7 @@ export const EventModal: React.FC<EventModalProps> = ({ event, isOpen, onClose }
               <div>
                 <div className="flex items-center gap-2.5 text-xs uppercase tracking-widest text-[#D4AF37] font-semibold mb-2">
                   <img
-                    src="/images/limbus_official_logo.png"
+                    src="/images/limbus_logo.png"
                     alt="LIMBUS Seal"
                     referrerPolicy="no-referrer"
                     className="w-7 h-7 object-contain drop-shadow-[0_0_8px_rgba(212,175,55,0.4)] shrink-0"

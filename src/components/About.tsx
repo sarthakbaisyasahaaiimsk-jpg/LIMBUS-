@@ -122,8 +122,8 @@ export const About: React.FC = () => {
             <div className="relative bg-[#0D1424]/90 border border-[#D4AF37]/30 rounded-xl p-6 sm:p-8 backdrop-blur-md shadow-2xl gold-glow-subtle">
               <div className="flex items-center gap-4 mb-5">
                 <img
-                  src="/images/limbus_official_logo.png"
-                  alt="Official LIMBUS 3.0 Logo"
+                  src="/images/college_logo.png"
+                  alt="AIIMS Kalyani Logo"
                   referrerPolicy="no-referrer"
                   className="w-16 h-16 object-contain drop-shadow-[0_0_15px_rgba(212,175,55,0.3)] shrink-0"
                 />
