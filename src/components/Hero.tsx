@@ -114,7 +114,7 @@ export const Hero: React.FC<HeroProps> = ({ onExplore, onRegister }) => {
           <div className="absolute -inset-4 bg-gradient-to-r from-[#D4AF37]/20 via-[#E5C158]/35 to-[#D4AF37]/20 rounded-full blur-2xl opacity-50 group-hover:opacity-85 transition-opacity duration-700 pointer-events-none" />
           
           <img
-            src="/src/assets/images/IMG_6058.png"
+            src="/images/limbus_official_logo.png"
             alt="Official LIMBUS Logo — AIIMS Kalyani"
             referrerPolicy="no-referrer"
             className="relative w-44 h-44 sm:w-60 sm:h-60 object-contain drop-shadow-[0_12px_30px_rgba(0,0,0,0.85)] drop-shadow-[0_0_35px_rgba(212,175,55,0.3)] group-hover:scale-105 group-hover:drop-shadow-[0_0_45px_rgba(212,175,55,0.5)] transition-all duration-700"
@@ -147,7 +147,7 @@ export const Hero: React.FC<HeroProps> = ({ onExplore, onRegister }) => {
           <span className="h-px w-10 sm:w-16 bg-gradient-to-r from-transparent to-[#D4AF37]" />
           <span className="flex items-center gap-2">
             <Compass className="w-4 h-4 animate-spin [animation-duration:15s]" />
-      
+            THEME : ODYSSEY
           </span>
           <span className="h-px w-10 sm:w-16 bg-gradient-to-l from-transparent to-[#D4AF37]" />
         </motion.div>

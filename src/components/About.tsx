@@ -47,7 +47,7 @@ export const About: React.FC = () => {
       {/* Background Subtle Odyssey Architecture */}
       <div className="absolute inset-0 pointer-events-none opacity-10">
         <img
-          src="/src/assets/images/odyssey_temple_medical_1790846296973.jpg"
+          src="/images/odyssey_temple_medical_1790846296973.jpg"
           alt="Temple of Episteme"
           referrerPolicy="no-referrer"
           className="w-full h-full object-cover grayscale"
@@ -122,7 +122,7 @@ export const About: React.FC = () => {
             <div className="relative bg-[#0D1424]/90 border border-[#D4AF37]/30 rounded-xl p-6 sm:p-8 backdrop-blur-md shadow-2xl gold-glow-subtle">
               <div className="flex items-center gap-4 mb-5">
                 <img
-                  src="/src/assets/images/limbus_official_logo.png"
+                  src="/images/limbus_official_logo.png"
                   alt="Official LIMBUS 3.0 Logo"
                   referrerPolicy="no-referrer"
                   className="w-16 h-16 object-contain drop-shadow-[0_0_15px_rgba(212,175,55,0.3)] shrink-0"

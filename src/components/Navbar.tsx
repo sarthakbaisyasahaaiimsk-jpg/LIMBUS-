@@ -62,7 +62,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate, activeSection }) => 
             className="text-left font-serif-cinzel text-xl sm:text-2xl font-bold tracking-widest text-[#F4EEDD] hover:text-[#D4AF37] transition-colors flex items-center gap-2.5 group focus:outline-none"
           >
             <img
-              src="/src/assets/images/limbus_official_logo.png"
+              src="/images/limbus_official_logo.png"
               alt="LIMBUS 3.0 Logo"
               referrerPolicy="no-referrer"
               className="w-9 h-9 object-contain group-hover:scale-110 transition-transform drop-shadow-[0_0_8px_rgba(212,175,55,0.35)] shrink-0"

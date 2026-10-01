@@ -47,7 +47,7 @@ export const WorkshopGrid: React.FC = () => {
         <div className="mt-8 mb-12 bg-[#0D1424] border border-[#D4AF37]/30 rounded-2xl overflow-hidden shadow-2xl grid grid-cols-1 lg:grid-cols-12 items-center">
           <div className="lg:col-span-5 h-56 sm:h-72 lg:h-full relative overflow-hidden">
             <img
-              src="/src/assets/images/clinical_hands_surgical_1790846314396.jpg"
+              src="/images/clinical_hands_surgical_1790846314396.jpg"
               alt="Hands-on surgical & clinical procedures"
               referrerPolicy="no-referrer"
               className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
