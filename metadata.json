@@ -1,0 +1,6 @@
+{
+  "name": "LIMBUS 3.0 — AIIMS Kalyani Annual Academic Fest",
+  "description": "Official website for LIMBUS 3.0, the Annual Academic Fest of AIIMS Kalyani (2–5 November 2026). Theme: ODYSSEY. Featuring academic competitions, clinical workshops, and medical quizzes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

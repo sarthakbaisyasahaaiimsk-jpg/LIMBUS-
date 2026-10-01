@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@theme {
+  --font-cinzel: 'Cinzel', serif;
+  --font-cormorant: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --color-greek-gold: #D4AF37;
+  --color-greek-gold-light: #E5C158;
+  --color-greek-gold-dark: #B8860B;
+  --color-parchment: #E8DFD0;
+  --color-parchment-light: #F4EEDD;
+  --color-parchment-muted: #A39682;
+  --color-greek-dark: #080C14;
+  --color-greek-card: #0D1424;
+  --color-greek-surface: #111A2E;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: #080C14;
+    color: #E8DFD0;
+  }
+  
+  h1, h2, h3, h4, .font-serif-cinzel {
+    font-family: var(--font-cinzel);
+  }
+}
+
+/* Greek Key Meander decorative border line */
+.greek-border-top {
+  background-image: repeating-linear-gradient(
+    90deg,
+    rgba(212, 175, 55, 0.4) 0px,
+    rgba(212, 175, 55, 0.4) 10px,
+    transparent 10px,
+    transparent 16px,
+    rgba(212, 175, 55, 0.4) 16px,
+    rgba(212, 175, 55, 0.4) 26px
+  );
+  height: 2px;
+}
+
+/* Subtle parchment grain overlay */
+.parchment-grain {
+  background-image: radial-gradient(rgba(212, 175, 55, 0.05) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Subtle glow */
+.gold-glow {
+  box-shadow: 0 0 35px -8px rgba(212, 175, 55, 0.25);
+}
+
+.gold-glow-subtle {
+  box-shadow: 0 4px 20px -2px rgba(212, 175, 55, 0.12);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #080C14;
+}
+::-webkit-scrollbar-thumb {
+  background: #1F293D;
+  border-radius: 4px;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2D3B55;
+}
