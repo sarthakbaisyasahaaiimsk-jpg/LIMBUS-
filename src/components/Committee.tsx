@@ -12,24 +12,36 @@ export const Committee: React.FC = () => {
     { label: 'Secretariat & Finance', value: 'Executive' },
     { label: 'Operations & PR', value: 'Operations' },
     { label: 'Events & Quizzes', value: 'Events' },
-    //{ label: 'Clinical Workshops', value: 'Workshops' },
   ];
 
   const filteredMembers = COMMITTEE_DATA.filter((m) => {
     if (activeCategory === 'ALL') return true;
-    if (activeCategory === 'Events') return m.category === 'Events' || m.category === 'Quizzes';
+
+    if (activeCategory === 'Events') {
+      return m.category === 'Events' || m.category === 'Quizzes';
+    }
+
     return m.category === activeCategory;
   });
 
   return (
-    <section id="committee" className="py-24 px-4 sm:px-6 lg:px-8 bg-[#0B0F19] text-[#E8DFD0]">
+    <section
+      id="committee"
+      className="py-24 px-4 sm:px-6 lg:px-8 bg-[#0B0F19] text-[#E8DFD0]"
+    >
       <div className="max-w-7xl mx-auto">
+
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.25em] text-[#D4AF37]">
             <LaurelWreath size={16} />
+
             <span>The Argonauts of AIIMS Kalyani</span>
-            <LaurelWreath size={16} className="rotate-180" />
+
+            <LaurelWreath
+              size={16}
+              className="rotate-180"
+            />
           </div>
 
           <h2 className="font-serif-cinzel text-3xl sm:text-4xl lg:text-5xl font-bold text-[#F4EEDD] tracking-tight">
@@ -37,7 +49,8 @@ export const Committee: React.FC = () => {
           </h2>
 
           <p className="font-serif italic text-base sm:text-lg text-[#C5A880]">
-            The visionary faculty patronage, executive secretariat, student leads, and clinical coordinators powering LIMBUS 3.0.
+            The faculty patronage, executive secretariat, and student leads
+            powering LIMBUS 3.0.
           </p>
 
           <GreekMeanderDivider className="my-6" />
@@ -71,37 +84,16 @@ export const Committee: React.FC = () => {
               <div className="absolute -top-6 -right-6 w-16 h-16 bg-[#D4AF37]/5 rounded-full blur-md group-hover:bg-[#D4AF37]/15 transition-all" />
 
               <div>
-                {/* Greek Role Kicker */}
+                {/* Member Name & Designation */}
                 <div>
-                  h3 className="font-serif-cinzel text-lg font-bold text-[#F4EEDD] group-hover:text-[#D4AF37] transition-colors">
-                 {member.name}
-                </h3>
-                 <p className="text-xs font-medium text-[#C5A880] mt-1">
+                  <h3 className="font-serif-cinzel text-lg font-bold text-[#F4EEDD] group-hover:text-[#D4AF37] transition-colors">
+                    {member.name}
+                  </h3>
+
+                  <p className="text-xs font-medium text-[#C5A880] mt-1">
                     {member.designation}
-                    </p>
-                </div>
-
-                {/* Member Name */}
-                <h3 className="font-serif-cinzel text-lg font-bold text-[#F4EEDD] group-hover:text-[#D4AF37] transition-colors">
-                  {member.name}
-                </h3>
-
-                {/* Designation */}
-                <p className="text-xs font-medium text-[#C5A880] mt-0.5">
-                  {member.designation}
-                </p>
-
-                {/* Department or Batch */}
-                <p className="text-[11px] text-[#A39682] mt-0.5">
-                  {member.departmentOrBatch}
-                </p>
-
-                {/* Bio */}
-                {member.bio && (
-                  <p className="text-xs text-[#A39682] mt-3 line-clamp-2 leading-relaxed">
-                    {member.bio}
                   </p>
-                )}
+                </div>
               </div>
 
               {/* Contact Link */}
@@ -112,13 +104,17 @@ export const Committee: React.FC = () => {
                     className="inline-flex items-center gap-1.5 text-xs text-[#D4AF37] hover:underline"
                   >
                     <Mail className="w-3.5 h-3.5" />
-                    <span className="text-[11px] truncate max-w-[200px]">{member.contact}</span>
+
+                    <span className="text-[11px] truncate max-w-[200px]">
+                      {member.contact}
+                    </span>
                   </a>
                 </div>
               )}
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );
