@@ -12,7 +12,7 @@ export const Committee: React.FC = () => {
     { label: 'Secretariat & Finance', value: 'Executive' },
     { label: 'Operations & PR', value: 'Operations' },
     { label: 'Events & Quizzes', value: 'Events' },
-    { label: 'Clinical Workshops', value: 'Workshops' },
+    //{ label: 'Clinical Workshops', value: 'Workshops' },
   ];
 
   const filteredMembers = COMMITTEE_DATA.filter((m) => {
@@ -72,14 +72,13 @@ export const Committee: React.FC = () => {
 
               <div>
                 {/* Greek Role Kicker */}
-                <div className="flex items-center justify-between gap-1 mb-2">
-                  <span className="text-[10px] uppercase font-bold tracking-wider text-[#D4AF37] flex items-center gap-1">
-                    <LaurelWreath size={12} />
-                    <span>{member.greekRole}</span>
-                  </span>
-                  <span className="text-[10px] text-[#A39682] uppercase">
-                    {member.category}
-                  </span>
+                <div>
+                  h3 className="font-serif-cinzel text-lg font-bold text-[#F4EEDD] group-hover:text-[#D4AF37] transition-colors">
+                 {member.name}
+                </h3>
+                 <p className="text-xs font-medium text-[#C5A880] mt-1">
+                    {member.designation}
+                    </p>
                 </div>
 
                 {/* Member Name */}
