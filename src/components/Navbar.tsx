@@ -32,7 +32,6 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate, activeSection }) => 
     { id: 'quizzes', label: 'Quizzes' },
     { id: 'workshops', label: 'Workshops' },
     { id: 'schedule', label: 'Schedule' },
-    { id: 'rules', label: 'Rules' },
   ];
 
   const handleLinkClick = (id: string) => {

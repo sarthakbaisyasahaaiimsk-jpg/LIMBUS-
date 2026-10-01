@@ -12,7 +12,6 @@ import { EventExplorer } from './components/EventExplorer';
 import { QuizArena } from './components/QuizArena';
 import { WorkshopGrid } from './components/WorkshopGrid';
 import { Schedule } from './components/Schedule';
-import { Rules } from './components/Rules';
 import { Committee } from './components/Committee';
 import { ContactLocation } from './components/ContactLocation';
 import { Footer } from './components/Footer';
@@ -43,7 +42,7 @@ export default function App() {
 
   // Observe active section on scroll
   useEffect(() => {
-    const sectionIds = ['hero', 'about', 'events', 'quizzes', 'workshops', 'schedule', 'rules', 'committee', 'contact'];
+    const sectionIds = ['hero', 'about', 'events', 'quizzes', 'workshops', 'schedule', 'committee', 'contact'];
 
     const handleScroll = () => {
       const scrollY = window.scrollY;
@@ -103,8 +102,6 @@ export default function App() {
         {/* Interactive 2–5 Nov Schedule Timeline */}
         <Schedule />
 
-        {/* Rules & Eligibility Accordions */}
-        <Rules />
 
         {/* Steering Committee & Leadership */}
         <Committee />

@@ -88,14 +88,6 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                   2–5 November Schedule
                 </button>
               </li>
-              <li>
-                <button
-                  onClick={() => onNavigate('rules')}
-                  className="hover:text-[#D4AF37] transition-colors focus:outline-none"
-                >
-                  Rules & Eligibility
-                </button>
-              </li>
             </ul>
           </div>
 
