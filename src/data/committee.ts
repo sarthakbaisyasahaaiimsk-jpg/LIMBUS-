@@ -37,7 +37,7 @@ export const COMMITTEE_DATA: CommitteeMember[] = [
   {
     id: 'joint-sec-1',
     name: 'Ankit Kumar',
-    designation: 'Joint Organising Secretary',
+    designation: 'Joint Organising Secretary & Workshop Organiser',
     category: 'Executive',
   },
   {
@@ -49,7 +49,7 @@ export const COMMITTEE_DATA: CommitteeMember[] = [
   {
     id: 'chief-organizer',
     name: 'Sharmeen Danial',
-    designation: 'Chief Organizer',
+    designation: 'Chief Organizer & IT Head',
     category: 'Executive',
   },
   {
@@ -86,7 +86,7 @@ export const COMMITTEE_DATA: CommitteeMember[] = [
   },
 
   // Events
-  {
+/*{
     id: 'event-1',
     name: 'Vishal Soni',
     designation: 'Events Head',
@@ -109,7 +109,7 @@ export const COMMITTEE_DATA: CommitteeMember[] = [
     name: 'Ashutosh Kumar',
     designation: 'Events Head',
     category: 'Events',
-  },
+  },*/
 
   // Quizzes
   {
