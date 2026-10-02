@@ -13,7 +13,7 @@ export interface WorkshopItem {
   description: string;
   learningObjectives: string[];
   keyProcedures: string[];
-  leadFaculty: string;
+  //leadFaculty: string;
   prerequisites: string;
   certification: string;
   isPopular?: boolean;
@@ -25,19 +25,19 @@ export const WORKSHOPS_DATA: WorkshopItem[] = [
     configKey: 'BLS',
     name: 'Basic Life Support (BLS)',
     greekTitle: 'Breath of Prometheus',
-    tagline: 'High-Quality Adult & Pediatric Resuscitation and Defibrillation',
+    tagline: 'High-Quality Resuscitation and Defibrillation',
     category: 'Resuscitation',
-    date: '2 & 4 November 2026 (Multiple Batches)',
-    time: 'Batch A: 11:00 – 14:00 | Batch B: 09:30 – 13:00',
-    venue: 'Medical Simulation & Skills Centre, 2nd Floor, AIIMS Kalyani',
-    fee: '₹400 / participant',
+    date: '2 & 4 November 2026 (Day 1 & Day 3)',
+    time: '10am – 1pm',
+    venue: 'College of Nursing Labs, AIIMS Kalyani',
+    fee: '₹250 / participant',
     seatsPerBatch: 30,
-    description: 'Master the life-saving chain of survival with American Heart Association (AHA) certified guidelines on computerized feedback mannequins.',
+    description: 'Master the life-saving chain of survival with American Heart Association (AHA) certified guidelines on real like mannequins.',
     learningObjectives: [
       'Deliver high-quality chest compressions with real-time depth, rate, and recoil feedback.',
       'Operate automated external defibrillators (AED) with rapid rhythm recognition.',
       'Execute effective bag-valve-mask ventilation and two-rescuer coordinated CPR.',
-      'Recognize and relieve severe foreign-body airway obstruction (choking) in adults, children, and infants.'
+      'Recognize and relieve severe foreign-body airway obstruction (choking).'
     ],
     keyProcedures: [
       'High-Performance Adult & Infant CPR',
@@ -45,9 +45,9 @@ export const WORKSHOPS_DATA: WorkshopItem[] = [
       'Bag-Valve-Mask (BVM) Seal & Ventilation',
       'Heimlich Maneuver & Infant Back Slaps'
     ],
-    leadFaculty: 'Department of Anaesthesiology & Critical Care, AIIMS Kalyani',
-    prerequisites: 'Open to all medical, nursing, dental, and paramedical students & interns.',
-    certification: 'AIIMS Kalyani Accredited BLS Hands-on Competency Certificate',
+    //leadFaculty: 'Department of Anaesthesiology & Critical Care, AIIMS Kalyani',
+    prerequisites: 'Open to all medical,non-medical, nursing, dental, and paramedical students & interns.',
+    certification: 'Organisers issued Certificate',
     isPopular: true
   },
   {
@@ -57,11 +57,11 @@ export const WORKSHOPS_DATA: WorkshopItem[] = [
     greekTitle: 'The All-Seeing Aegis',
     tagline: 'Bedside Sonographic Mastery & Real-time Diagnostic Precision',
     category: 'Imaging',
-    date: '3 November 2026',
-    time: '09:00 – 12:30 (Morning Intensive)',
-    venue: 'Radiology & Emergency Sonography Lab, Ground Floor',
-    fee: '₹600 / participant',
-    seatsPerBatch: 24,
+    date: '3 & 5 November 2026',
+    time: '2pm – 5pm',
+    venue: 'College of Nursing, AIIMS Kalyani',
+    fee: '₹250 / participant',
+    seatsPerBatch: 30,
     description: 'Transform your physical examination with bedside ultrasound. Learn rapid bedside sonography protocols on live standardized models and phantoms.',
     learningObjectives: [
       'Master the complete Extended Focused Assessment with Sonography for Trauma (E-FAST) protocol.',
@@ -71,13 +71,13 @@ export const WORKSHOPS_DATA: WorkshopItem[] = [
     ],
     keyProcedures: [
       'E-FAST Protocol (Hepatorenal, Splenorenal, Pelvic, Cardiac, Pleural)',
-      'Ultrasound-Guided Vascular Access on Gelatin Vessel Phantoms',
-      'Lung Ultrasound (Sliding Sign, B-Lines, Seashore Pattern)',
-      'Inferior Vena Cava (IVC) Collapsibility Assessment for Fluid Status'
+      'Ultrasound-Guided Cannulation',
+      //'Lung Ultrasound (Sliding Sign, B-Lines, Seashore Pattern)',
+      //'Inferior Vena Cava (IVC) Collapsibility Assessment for Fluid Status'
     ],
-    leadFaculty: 'Department of Radiodiagnosis & Trauma Emergency Medicine',
-    prerequisites: 'MBBS students (2nd year onwards), Interns & Postgraduates.',
-    certification: 'AIIMS Kalyani Clinical Sonology Training Certificate',
+    //leadFaculty: 'Department of Radiodiagnosis & Trauma Emergency Medicine',
+    prerequisites: 'Open to all medical, nursing students & interns.',
+    certification: 'Organisers issued Certificate',
     isPopular: true
   },
   {
@@ -87,11 +87,11 @@ export const WORKSHOPS_DATA: WorkshopItem[] = [
     greekTitle: 'The Chiron Apprenticeship',
     tagline: 'Essential Bedside Invasive & Diagnostic Clinical Interventions',
     category: 'Procedural',
-    date: '2 & 4 November 2026',
-    time: 'Day 1: 14:30 – 17:30 | Day 3: 13:30 – 16:30',
-    venue: 'Clinical Skills Lab Complex, Academic Block',
-    fee: '₹450 / participant',
-    seatsPerBatch: 28,
+    date: '2 ,3 & 4 November 2026',
+    time: '10am – 1pm',
+    venue: 'College of Nursing Labs, AIIMS Kalyani',
+    fee: '₹350 / participant',
+    seatsPerBatch: 30,
     description: 'Comprehensive hands-on training across foundational invasive procedural skills required in emergency wards, ICUs, and general inpatient departments.',
     learningObjectives: [
       'Master aseptic catheterisation techniques across male and female urinary simulators.',
@@ -106,9 +106,10 @@ export const WORKSHOPS_DATA: WorkshopItem[] = [
       'Laryngeal Mask Airway (LMA) Supraglottic Insertion',
       'Nasogastric (NG) Tube Insertion & Placement Confirmation'
     ],
-    leadFaculty: 'Department of General Medicine & Emergency Medicine',
-    prerequisites: 'Open to all medical & nursing students and interns.',
-    certification: 'AIIMS Kalyani Procedural Skills Certificate of Completion'
+    //leadFaculty: 'Department of General Medicine & Emergency Medicine',
+    prerequisites: 'Open to all medical & nursing students , interns & residents.',
+    certification: 'Organisers issued Certificate',
+    isPopular: true
   },
   {
     id: 'suturing',
@@ -117,11 +118,11 @@ export const WORKSHOPS_DATA: WorkshopItem[] = [
     greekTitle: 'The Craft of Daedalus',
     tagline: 'Surgical Instrument Ergonomics, Stitching Patterns & Wound Closure',
     category: 'Surgical',
-    date: '3 November 2026',
-    time: '09:30 – 13:00',
-    venue: 'Surgical Skills Workshop Suite, 3rd Floor',
+    date: '3 , 4 & 5 November 2026',
+    time: '2pm – 5pm',
+    venue: 'Near MS Office Parking, AIIMS Kalyani',
     fee: '₹350 / participant',
-    seatsPerBatch: 32,
+    seatsPerBatch: 35,
     description: 'Build uncompromising surgical muscle memory. Master instrument grips, tissue handling, and diverse suture patterns on multilayered synthetic tissue models.',
     learningObjectives: [
       'Develop precise ergonomic control of needle holders, Adson forceps, and surgical scissors.',
@@ -135,9 +136,10 @@ export const WORKSHOPS_DATA: WorkshopItem[] = [
       'Subcuticular Cosmetic Intradermal Closure',
       'Two-Handed, One-Handed & Instrument Knot Tying'
     ],
-    leadFaculty: 'Department of General Surgery, AIIMS Kalyani',
-    prerequisites: 'All undergraduate medical, dental & allied healthcare students.',
-    certification: 'AIIMS Kalyani Surgical Foundations Certificate'
+    //leadFaculty: 'Department of General Surgery, AIIMS Kalyani',
+    prerequisites: 'All undergraduate medical, nursing , dental & allied healthcare students , interns & residents.',
+    certification: 'Organisers Issued Certificate',
+    isPopular: true
   },
   {
     id: 'laparoscopy',
@@ -146,11 +148,11 @@ export const WORKSHOPS_DATA: WorkshopItem[] = [
     greekTitle: 'Hephaestus’ Precision Forge',
     tagline: 'Minimally Invasive Surgery Fundamentals & Box Trainer Mastery',
     category: 'Surgical',
-    date: '4 November 2026',
-    time: '09:00 – 12:30',
-    venue: 'Minimal Access Surgery Simulation Center',
-    fee: '₹550 / participant',
-    seatsPerBatch: 20,
+    date: '3 , 4 & 5 November 2026',
+    time: '2pm – 5pm',
+    venue: 'Near MS Office Parking, AIIMS Kalyani',
+    fee: '₹250 / participant',
+    seatsPerBatch: 30,
     description: 'Step into the modern world of keyhole surgery. Train your fulcrum effect adaptation, depth perception compensation, and precision intracorporeal manoeuvres.',
     learningObjectives: [
       'Adapt to the fulcrum effect and 2D monitor depth perception during laparoscopic manipulation.',
@@ -164,9 +166,10 @@ export const WORKSHOPS_DATA: WorkshopItem[] = [
       '30-Degree Endoscopic Angle Orientation',
       'Laparoscopic Extracorporeal & Intracorporeal Knot Tying'
     ],
-    leadFaculty: 'Department of Minimal Access Surgery & Surgical Gastroenterology',
-    prerequisites: 'MBBS students (3rd year onwards), Interns & Surgical Residents.',
-    certification: 'AIIMS Kalyani Laparoscopic Skills Simulation Certificate'
+    //leadFaculty: 'Department of Minimal Access Surgery & Surgical Gastroenterology',
+    prerequisites: 'All undergraduate medical, nursing , dental & allied healthcare students , interns & residents.',
+    certification: 'Organisers Issued Certificate',
+    isPopular: true
   },
   {
     id: 'obg',
@@ -175,11 +178,11 @@ export const WORKSHOPS_DATA: WorkshopItem[] = [
     greekTitle: 'The Sanctuary of Hera',
     tagline: 'Labor Mechanics, Obstetric Emergencies & Perineal Repair',
     category: 'Specialty',
-    date: '3 & 5 November 2026',
-    time: 'Batch 1: 3 Nov, 14:00 – 17:30 | Batch 2: 5 Nov, 10:00 – 13:00',
+    date: '2 & 5 November 2026',
+    time: '2pm – 5pm',
     venue: 'Obstetrics & Gynaecology Simulation Lab',
-    fee: '₹450 / participant',
-    seatsPerBatch: 26,
+    fee: '₹350 / participant',
+    seatsPerBatch: 30,
     description: 'Hands-on experiential training on high-fidelity birthing mannequins covering normal labor delivery, obstetric hemorrhage crises, and multi-layer episiotomy suturing.',
     learningObjectives: [
       'Navigate the cardinal movements of normal vertex delivery on pelvic birth simulators.',
@@ -193,9 +196,9 @@ export const WORKSHOPS_DATA: WorkshopItem[] = [
       'Condom-Catheter / Bakri Balloon Uterine Tamponade',
       'Mediolateral Episiotomy Suture Repair (Vaginal mucosa, muscle & skin)'
     ],
-    leadFaculty: 'Department of Obstetrics & Gynaecology, AIIMS Kalyani',
-    prerequisites: 'MBBS & Nursing students (2nd year onwards), Interns & Nursing Officers.',
-    certification: 'AIIMS Kalyani Obstetric Emergency Skills Certificate'
+    //leadFaculty: 'Department of Obstetrics & Gynaecology, AIIMS Kalyani',
+    prerequisites: 'All undergraduate medical, nursing , dental & allied healthcare students , interns & residents.',
+    certification: 'Organisers Issued Certificate'
   },
   {
     id: 'neonatal-resuscitation',
@@ -204,11 +207,11 @@ export const WORKSHOPS_DATA: WorkshopItem[] = [
     greekTitle: 'Apollo’s Dawn',
     tagline: 'The Golden Minute Protocol & Newborn Life-Saving Skills',
     category: 'Resuscitation',
-    date: '2 November 2026',
-    time: '10:30 – 13:30 (Day 1 Opening Workshop)',
-    venue: 'Neonatal Intensive Care Simulation Suite',
-    fee: '₹400 / participant',
-    seatsPerBatch: 25,
+    date: '4 & 5 November 2026',
+    time: '10am – 1pm',
+    venue: 'Lecture Theatre,AIIMS Kalyani',
+    fee: '₹250 / participant',
+    seatsPerBatch: 30,
     description: 'Every second counts in the first 60 seconds of human life. Train on NRP 8th Edition guidelines on premature and term infant resuscitation simulators.',
     learningObjectives: [
       'Execute the initial steps of newborn care (Warmth, Positioning, Clearing airway, Drying, Stimulating).',
@@ -222,9 +225,9 @@ export const WORKSHOPS_DATA: WorkshopItem[] = [
       'Neonatal 3:1 Coordinated Chest Compressions with Two-Thumb Technique',
       'Emergency Umbilical Venous Catheter (UVC) Insertion Simulation'
     ],
-    leadFaculty: 'Department of Neonatology & Pediatrics, AIIMS Kalyani',
-    prerequisites: 'Medical & Nursing undergraduates, Interns & Postgraduates.',
-    certification: 'AIIMS Kalyani Neonatal Resuscitation Provider Certificate'
+    //leadFaculty: 'Department of Neonatology & Pediatrics, AIIMS Kalyani',
+    prerequisites: 'All undergraduate medical, nursing , allied healthcare students , interns & residents.',
+    certification: 'organisers issued Certificate'
   },
   {
     id: 'first-responder',
@@ -251,9 +254,9 @@ export const WORKSHOPS_DATA: WorkshopItem[] = [
       'Rigid Cervical Collar Sizing & Log-Roll Technique',
       'START Triage Mass-Casualty Colour Tagging Drills'
     ],
-    leadFaculty: 'Department of Emergency Medicine & Trauma Surgery',
+  //leadFaculty: 'Department of Emergency Medicine & Trauma Surgery',
     prerequisites: 'Open to all students, faculty, healthcare workers & paramedical staff.',
-    certification: 'AIIMS Kalyani Certified Trauma First Responder Badge & Certificate'
+    certification: 'Organisers Issued Certificate'
   },
   {
     id: 'essential-clinical-skills',
@@ -262,11 +265,11 @@ export const WORKSHOPS_DATA: WorkshopItem[] = [
     greekTitle: 'The Asclepian Mastery',
     tagline: 'Arterial Blood Gas, ICD Insertion, Defibrillation & ECG Mastery',
     category: 'Procedural',
-    date: '5 November 2026',
-    time: '09:30 – 13:00',
-    venue: 'Acute Care Simulation Hub, 1st Floor',
-    fee: '₹500 / participant',
-    seatsPerBatch: 25,
+    date: '2 November 2026',
+    time: '9am – 1pm',
+    venue: 'College of Nursing Labs, AIIMS Kalyani',
+    fee: '₹250 / participant',
+    seatsPerBatch: 30,
     description: 'Master advanced bedside emergency interventions: arterial puncture, chest tube placement, defibrillation/cardioversion, and ECG rhythm analysis.',
     learningObjectives: [
       'Perform sterile radial artery puncture for arterial blood gas (ABG) sampling and interpret acid-base disturbances.',
@@ -280,8 +283,8 @@ export const WORKSHOPS_DATA: WorkshopItem[] = [
       'Manual Defibrillation & Synchronized Cardioversion on Arrhythmia Simulator',
       'Systematic 12-Lead ECG Analysis & STEMI Localization'
     ],
-    leadFaculty: 'Department of Pulmonary Medicine & Cardiology, AIIMS Kalyani',
-    prerequisites: 'MBBS students (3rd year onwards), Interns & Nursing Officers.',
-    certification: 'AIIMS Kalyani Advanced Procedural Competency Certificate'
+    //leadFaculty: 'Department of Pulmonary Medicine & Cardiology, AIIMS Kalyani',
+    prerequisites: 'All undergraduate medical, nursing , dental & allied healthcare students , interns & residents.',
+    certification: 'Organisers Issued Certificate'
   }
 ];
