@@ -73,7 +73,7 @@ export const COMMITTEE_DATA: CommitteeMember[] = [
   {
     id: 'treasurer-2',
     name: 'Aneesha Dasari',
-    designation: 'Treasurer',
+    designation: 'Treasurer & Treasure Hunt Head',
     category: 'Executive',
   },
 
